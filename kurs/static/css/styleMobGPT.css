@@ -1,0 +1,31 @@
+.present_tenses{
+    display: block;
+}
+
+/*
+    wielkowść ekrenu
+*/
+
+@media (max-width: 991px) {
+    .past_tenses{
+        display: none;
+    }
+    .future_tenses{
+        display: none;
+    }
+    .future_in_the_past_tenses{
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .past_tenses{
+        display: block;
+    }
+    .future_tenses{
+        display: block;
+    }
+    .future_in_the_past_tenses{
+        display: block;
+    }
+}

@@ -1,0 +1,116 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/style_culture.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/styleMobGI.css' %}"/>
+{% endblock %}
+{% block content %}
+<div class="content">
+    {% block body %}
+    {% endblock %}
+    <div class="component_left">
+        <div class="the_country">
+            <h2>The country</h2>
+            <a href="{% url 'geographical_identities' %}'"><p>Geographical identities</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Physical features and climate</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Agriculture, fisheries and forestry</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Energy resources</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Transport and communications</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Attitudes to the environment</p></a>
+        </div>
+        <div class="the_people">
+            <h2>The people</h2>
+            <a href="{% url 'culture_lorem' %}"><p>Early settlement to AD 1066</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Growth and immigration to the twentieth century</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Immigration from 1900</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Population movements from 1900</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Attitudes to national, regional and local identities</p></a>
+        </div>
+        <div class="politics_and_government">
+            <h2>Politics and government</h2>
+            <a href="{% url 'culture_lorem' %}"><p>Political history</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>The political framework</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Constitution and monarchy</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>UK Parliament: role, legislation and elections</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>The party-political system</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>UK government</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>UK parliamentary control of government</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Attitudes to politics</p></a>
+        </div>
+        <div class="international_relations">
+            <h2>International relations</h2>
+            <a href="{% url 'culture_lorem' %}"><p>Foreign and defence policy</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Empire and Commonwealth</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>The European Union (EU)</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Irish Republic and Northern Ireland</p></a>
+        </div>
+        <div class="the_legal_system">
+            <h2>The legal system</h2>
+            <a href="{% url 'culture_lorem' %}"><p>Legal history</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Sources of British law</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>The court system in England and Wales</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Civil and criminal proceedings</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Law and order</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>The legal profession</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Attitudes to law and order</p></a>
+        </div>
+        <div class="the_economy">
+            <h2>The economy</h2>
+            <a href="{% url 'culture_lorem' %}"><p>Economic history</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>The modern economy: policies, structure and performance</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Social class, the workforce and employment</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Financial institutions</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Industrial and commercial institutions</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Consumer protection</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Attitudes to the economy</p></a>
+        </div>
+        <div class="social_services">
+            <h2>Social services</h2>
+            <a href="{% url 'culture_lorem' %}"><p>Social services history</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Changing family and demographic structures</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Social Security</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>The National Health Service (NHS)</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>The personal social services</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Housing</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Attitudes to the social services</p></a>
+        </div>
+        <div class="education">
+            <h2>Education</h2>
+            <a href="{% url 'culture_lorem' %}"><p>School history</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>The state school system</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>The independent (fee-paying) school sector</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>School organization and examinations</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Higher education</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Other higher education collaeges</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Further, adult and lifelong education</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Attitudes to education</p></a>
+        </div>
+        <div class="the_media">
+            <h2>The media</h2>
+            <a href="{% url 'culture_lorem' %}"><p>The print media</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>The broadcasting media</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Media ownership and freedom of expression</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Attitudes to the media</p></a>
+        </div>
+        <div class="religion">
+            <h2>Religion</h2>
+            <a href="{% url 'culture_lorem' %}"><p>Religious history</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>The Christian tradition</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>The Roman Catholic Church</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>The non-Christian tradition</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Other non-Christian religions</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Co-operation among the churches</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Religion in schools</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Religious membership and observance</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Attitudes to religion and morality</p></a>
+        </div>
+        <div class="leisure_sports_and_the_arts">
+            <h2>Leisure, sports and the arts</h2>
+            <a href="{% url 'culture_lorem' %}"><p>Leisure activities</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Sports</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>The arts</p></a>
+            <a href="{% url 'culture_lorem' %}"><p>Attitudes to leisure, sports and the arts</p></a>
+        </div>
+    </div>
+</div>
+{% endblock %}

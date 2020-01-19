@@ -1,0 +1,121 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/style_main_page.css' %}">
+{% endblock %}
+{% block content %}
+<div class="content col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+    <div class="component">
+        <div class="img main_img_mob_first_img offset-xl-1 offset-lg-1 offset-md-3 offset-sm-1 col-xl-3 col-lg-4 col-md-6 col-sm-10 col-12">
+            <img src="{% static 'img/ksiazka.png' %}"/>
+        </div>
+        <div class="text main_text_mob_first_img  offset-xl-1 offset-lg-0 offset-md-2 offset-sm-1 col-xl-7 col-lg-6 col-md-8 col-sm-10 col-12">
+            <h1>Kto najlepiej skorzysta z naszego kursu?</h1>
+            <h2>Nasz kurs jes dedykowany osobom z podstawowymi
+                zdolnośćiami z języka angielskiego, które pragną
+                rozwijać swoje umiejętności.</h2>
+        </div>
+    </div>
+    <div class="component">
+        <div class="text main_text_mob_first_text offset-xl-1 offset-lg-0 offset-md-2 offset-sm-1 col-xl-7 col-lg-6 col-md-8 col-sm-10 col-12">
+            <h1>Czego dokładnie się nauczycie?</h1>
+            <h2>Nasz kurs obejmuje słownictwo, gramatykę i fonetyke
+                na poziomie B1. Do działu słownictwo dodaliśmy dodatkową
+                trudniejszą zawartość, do tego, dział kultura jest cala po
+                angielsku.</h2>
+        </div>
+        <div class="img main_img_mob_first_text offset-xl-1 offset-lg-1 offset-md-3 offset-sm-1 col-xl-3 col-lg-4 col-md-6 col-sm-10 col-12">
+            <img src="{% static 'img/ksiazki.png' %}"/>
+        </div>
+    </div>
+    <div class="component">
+        <div class="img main_img_mob_first_img offset-xl-1 offset-lg-1 offset-md-3 offset-sm-1 col-xl-3 col-lg-4 col-md-6 col-sm-10 col-12">
+            <img src="{% static 'img/ksiazka.png' %}"/>
+        </div>
+        <div class="text main_text_mob_first_img  offset-xl-1 offset-lg-0 offset-md-2 offset-sm-1 col-xl-7 col-lg-6 col-md-8 col-sm-10 col-12">
+            <h1>Jak wygląda system kształcenia?</h1>
+            <h2>To ty decydujesz jak się bedziesz uczył. My tylko
+                dostarczamy ci niezbęłdnych narzędzi. Materiał podzieliliśmy
+                na trzy części: gramatyka, słownictwo i fonetyka.</h2>
+        </div>
+    </div>
+    <div class="component">
+        <div class="text main_text_mob_first_text offset-xl-1 offset-lg-0 offset-md-2 offset-sm-1 col-xl-7 col-lg-6 col-md-8 col-sm-10 col-12">
+            <h1>Gramatyka</h1>
+            <h2>W tej części znajdują się wszystkie struktury
+                gramatyczne podzielone na osobne działy. Pod koniec każdego
+                działu znajduje się test sprawdzający. Jego zaliczenie jest
+                konieczne do uzyskania nagrody.</h2>
+            <div class="button_main">
+                <a href="gramatyka_present_countinuous.php"><h2>do nauki</h2></a>
+            </div>
+        </div>
+        <div class="img main_img_mob_first_text offset-xl-1 offset-lg-1 offset-md-3 offset-sm-1 col-xl-3 col-lg-4 col-md-6 col-sm-10 col-12">
+            <img src="{% static 'img/ksiazki.png' %}"/>
+        </div>
+    </div>
+    <div class="component">
+        <div class="img main_img_mob_first_img offset-xl-1 offset-lg-1 offset-md-3 offset-sm-1 col-xl-3 col-lg-4 col-md-6 col-sm-10 col-12">
+            <img src="{% static 'img/ksiazka.png' %}"/>
+        </div>
+        <div class="text main_text_mob_first_img  offset-xl-1 offset-lg-0 offset-md-2 offset-sm-1 col-xl-7 col-lg-6 col-md-8 col-sm-10 col-12">
+            <h1>Słownictwo</h1>
+            <h2>Dział słownictwo został podzielony tematycznie,
+                tak jak w szkole ;) Każdy dział kończy się testem
+                sprawdzającym.</h2>
+            <div class="button_main">
+                <a href="czlowiek.php"><h2>do nauki</h2></a>
+            </div>
+        </div>
+    </div>
+    <div class="component">
+        <div class="text main_text_mob_first_text offset-xl-1 offset-lg-0 offset-md-2 offset-sm-1 col-xl-7 col-lg-6 col-md-8 col-sm-10 col-12">
+            <h1>Fonetyka</h1>
+            <h2>Ta część wyjątkowo nie kończy się testem. Znajdują sie
+                tu zagadnienia dotyczące poprawnej wymowy ( brytyjskiej ).</h2>
+            <div class="button_main">
+                <a href="bee.php"><h2>do nauki</h2></a>
+            </div>
+        </div>
+        <div class="img main_img_mob_first_text offset-xl-1 offset-lg-1 offset-md-3 offset-sm-1 col-xl-3 col-lg-4 col-md-6 col-sm-10 col-12">
+            <img src="{% static 'img/ksiazki.png' %}"/>
+        </div>
+    </div>
+    <div class="component">
+        <div class="img main_img_mob_first_img offset-xl-1 offset-lg-1 offset-md-3 offset-sm-1 col-xl-3 col-lg-4 col-md-6 col-sm-10 col-12">
+            <img src="{% static 'img/ksiazka.png' %}"/>
+        </div>
+        <div class="text main_text_mob_first_img  offset-xl-1 offset-lg-0 offset-md-2 offset-sm-1 col-xl-7 col-lg-6 col-md-8 col-sm-10 col-12">
+            <h1>Kultura</h1>
+            <h2>Kultura to dział dla ludzi, którzy np. planują
+                pozostać w krajach anglojęzycznych na dlużej.</h2>
+            <div class="button_main">
+                <a href="geographical_identities.php"><h2>do nauki</h2></a>
+            </div>
+        </div>
+    </div>
+    <div class="component">
+        <div class="text main_text_mob_first_text offset-xl-1 offset-lg-0 offset-md-2 offset-sm-1 col-xl-7 col-lg-6 col-md-8 col-sm-10 col-12">
+            <h1>Nagroda</h1>
+            <h2>Ukończenie naszego kursu daje ci nie tylko bezcenną
+                wiedzę. Po zdaniu wszystkich testów dostajecie certyfikat.</h2>
+        </div>
+        <div class="img main_img_mob_first_text offset-xl-1 offset-lg-1 offset-md-3 offset-sm-1 col-xl-3 col-lg-4 col-md-6 col-sm-10 col-12">
+            <img src="{% static 'img/ksiazki.png' %}"/>
+        </div>
+    </div>
+    <div class="component">
+        <div class="img main_img_mob_first_img offset-xl-1 offset-lg-1 offset-md-3 offset-sm-1 col-xl-3 col-lg-4 col-md-6 col-sm-10 col-12">
+            <img src="{% static 'img/ksiazka.png' %}"/>
+        </div>
+        <div class="text main_text_mob_first_img  offset-xl-1 offset-lg-0 offset-md-2 offset-sm-1 col-xl-7 col-lg-6 col-md-8 col-sm-10 col-12">
+            <h1>Avatar</h1>
+            <h2>W celu otrzymania certyfikatu należy założyć konto,
+                abyśmy mogli zapisywać wyniki twojej nauki.</h2>
+            <div class="button_main">
+                <a href="registration.php"><h2>załóż konto</h2></a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

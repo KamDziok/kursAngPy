@@ -1,0 +1,81 @@
+.component {
+	padding: 33px 0px;
+}
+
+.component:nth-child(odd) {
+	background-color: #fafafa;
+	overflow: hidden;
+}
+
+.component:nth-child(odd) .button_main h2 {
+	color: #0082ff;
+	border: 1px solid #0082ff;
+}
+
+.component:nth-child(odd) .button_main h2:hover {
+	background-color: #0082ff;
+	color: white ;
+	box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.4);
+}
+
+.component:nth-child(even) .button_main h2 {
+	color: white;
+	border: 1px solid white;
+}
+
+.component:nth-child(even) .button_main h2:hover {
+	background-color: white;
+	color: #0082ff;
+	box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.4);
+}
+
+.component:nth-child(even) {
+	background-color: #0082ff;
+	overflow: hidden;
+}
+
+.button_main {
+	padding: 0px 78% 0px 5%;
+}
+
+.button_main > a {
+	text-decoration: none;
+}
+
+.button_main > a > h2 {
+	padding: 10px 0px;
+	margin: 0px;
+	text-align: center;
+}
+
+.img {
+	width: 28%;
+	padding: 30px 2%;
+	float: left;
+}
+
+.img > img {
+	width: 100%;
+}
+
+.text {
+	width: 60%;
+	padding: 50px 4%;
+	float: left;
+}
+
+.text > h1 {
+	padding: 20px 0px;
+	margin: 0px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 40px;
+}
+
+.text > h2 {
+	padding: 20px 5%;
+	margin: 0px;
+	text-align: justify;
+	font-size: 24px;
+	line-height: 35px;
+}

@@ -1,0 +1,9 @@
+.subject{
+    margin: 0px;
+    padding: 0px 50px;
+}
+
+.subject > h2 {
+    margin: 0px;
+    padding: 16px 0px;
+}

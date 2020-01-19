@@ -1,0 +1,29 @@
+.component_right > h1 {
+    margin: 0px;
+    padding: 25px 0px;
+}
+
+.subject{
+    padding: 0px 50px;
+    margin: 0px;
+}
+
+.subject h2 {
+    margin: 0px;
+    padding: 16px 0px;
+}
+
+.subject h3 {
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 16px 50px;
+}
+
+.bee{
+	text-indent: 0px!important;
+	padding-left: 50px!important;
+}
+
+.separator{
+    padding: 20px 28%;
+}

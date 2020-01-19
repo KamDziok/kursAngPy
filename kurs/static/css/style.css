@@ -1,0 +1,292 @@
+@font-face
+{
+font-family: dosis;
+src:url(../kroj/dosis/Dosis-Light.otf);
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: dosis!important;
+}
+
+#container{
+	width: 100%;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+header{
+	width: 100%;
+	overflow: hidden;
+}
+
+header img{
+	width: 16.666%;
+}
+
+.menu_horizontal{
+	background-color: #fafafa;
+	box-shadow: 0px -4px 15px -6px rgba(0,0,0,0.3);
+	height: 52px;
+	padding: 0px!important;
+}
+
+.menu_horizontal div{
+	background-color: #0082ff;
+	height: 52px;
+	padding: 0px;
+	float: left;
+	text-align: center;
+}
+
+.menu_horizontal_curent{
+	background-color: #fafafa!important;
+}
+
+.menu_horizontal div a{
+	background-color: #fafafa;
+	display: block;
+	padding: 12px 0px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #0082ff;
+	cursor: pointer;
+	word-spacing: 5px;
+}
+
+.menu_horizontal div ul{
+	background-color:  #fafafa;
+	position: relative;
+	top: 5px;
+	margin: 0px;
+	padding: 13px 0px 13px 0px;
+	display: none;
+	text-align: left;
+	list-style: none;
+	box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.2);
+}
+
+.menu_horizontal div ul li a{
+	color: #0082ff!important;
+	text-decoration: none;
+	padding: 13px 10px 13px 13%;
+}
+
+.menu_horizontal div ul li a:hover{
+	background-color: #0082ff;
+	color: #fafafa!important;
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.6);
+}
+
+.content{
+	background-color: #fafafa;
+	overflow: hidden;
+	padding: 0px!important;
+}
+
+.component_left{
+	background-color: white;
+	width: 16.666%;
+	float: right;
+	overflow-y: auto;
+	overflow-x: hidden;
+	box-shadow: -10px 0px 28px 0px rgba(0,0,0,0.4);
+}
+
+.component_left h2{
+	margin: 0px;
+	padding: 20px 10px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.component_left a{
+	text-decoration: none;
+}
+
+.component_left a:hover{
+	text-decoration: underline;
+}
+
+.component_left a p{
+	margin: 0px;
+	padding: 10px 20px;
+	text-transform: capitalize;
+	color: black;
+}
+
+.component_right{
+	width: 83.334%;
+	padding: 0px 3% 39px 3%;
+	float: right;
+}
+
+.component_right > h1{
+	margin: 0px;
+	padding: 25px 0px;
+}
+
+.component_right p{
+	margin: 0px;
+	padding: 10px 0px;
+	text-align: justify;
+	word-spacing:3px;
+	line-height: 28px;
+	text-indent: 50px;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+p.example{
+	background-color: #9ED8FF!important;
+	padding: 5px 0px!important;
+	text-align: center!important;
+	font-style: italic!important;
+	font-size: 16px!important;
+	text-transform: none!important;
+	text-indent: 0px!important;
+}
+
+.component_right h3{
+	text-transform: uppercase;
+}
+
+h3.note{
+	padding: 8px 0px!important;
+	color: red!important;
+}
+
+div.note > p.example{
+	background-color: #FFA09F!important;
+}
+
+h3.example{
+	padding: 8px 0px!important;
+	text-align: left!important;
+}
+
+.component_right > div ul{
+	margin: 0px;
+	padding: 0px;
+	list-style-position: inside;
+}
+
+.component_right > div ul li{
+	padding:10px 0px 10px 50px;
+	text-align: justify;
+	word-spacing:3px;
+	line-height: 28px;
+	text-indent: 50px;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+.button {
+	background-color: white;
+	padding: 10px 0px;
+	margin: 0px;
+	color: #0082ff;
+	font-size: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	border: 1px solid #0082ff;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #0082ff;
+	color: white;
+	box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.4);
+}
+
+a {
+	text-decoration: none!important;
+}
+
+footer{
+	overflow: hidden;
+	clear: both;
+	background-color: #0082ff;
+	width: 100%;
+	padding: 10px 6%;
+}
+
+footer > h5{
+	float: right;
+	padding: 4px 0px;
+	margin: 0px;
+	color: white;
+	font-weight: bold;
+}
+
+.avatar{
+	padding-top: 10px;
+	width: 8.333%;
+	float: right;
+}
+
+.avatar > a{
+	border-radius: 90%;
+}
+
+.avatar > a > div{
+	background-image: url("../img/logo.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 80%;
+	width: 0px;
+	padding: 20%;
+	margin: auto;
+	border: 1px solid #0082ff;
+	border-radius: 90%;
+}
+
+.avatar > a > div:hover{
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.4);
+}
+
+.avatar p{
+	color: #0082ff;
+	text-align: center;
+	margin: 0px;
+}
+
+input[type='radio']{
+    -webkit-appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 90%;
+    border: 1px solid #0082ff;
+}
+
+input[type='radio']:active{
+	box-shadow: inset 0px -2px 4px 0px rgb(0, 0, 0,0.4);
+}
+
+input[type='radio']:checked{
+	background-image: url("../img/kropka.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+    border: 2px solid #0082ff;
+}
+
+input[type='checkbox']{
+	-webkit-appearance: none;
+    width: 15px;
+	height: 15px;
+	border: 1px solid #0082ff;
+}
+
+input[type='checkbox']:active{
+	box-shadow: inset 0px -2px 4px 0px rgb(0, 0, 0,0.4);
+}
+
+input[type='checkbox']:checked{
+	background-image: url("../img/fajka.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 90%;
+	border: 2px solid #0082ff;
+}

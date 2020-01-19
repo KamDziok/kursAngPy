@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/style_grammar.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styleMobGPT.css' %}"/>
+{% endblock %}
+{% block content %}
+<div class="content">
+    {% block body %}
+    {% endblock %}
+    <div class="component_left">
+        <div class="present_tenses">
+            <h2>Present tenses</h2>
+            <a href="{% url 'gramatyka_present_countinuous' %}"><p>Present continuous</p></a>
+            <a href="{% url 'gramar_lorem' %}"><p>Present simple</p></a>
+            <a href="{% url 'gramar_lorem' %}"><p>Present perfect</p></a>
+            <a href="{% url 'gramar_lorem' %}"><p>Present perfect continuous</p></a>
+        </div>
+        <div class="past_tenses">
+            <h2>Past tenses</h2>
+            <a href="{% url 'gramar_lorem' %}"><p>Past continuous</p></a>
+            <a href="{% url 'gramar_lorem' %}"><p>Past simple</p></a>
+            <a href="{% url 'gramar_lorem' %}"><p>Past perfect</p></a>
+            <a href="{% url 'gramar_lorem' %}"><p>Past perfect continuous</p></a>
+        </div>
+        <div class="future_tenses">
+            <h2>Future tenses</h2>
+            <a href="{% url 'gramar_lorem' %}"><p>Future continuous</p></a>
+            <a href="{% url 'gramar_lorem' %}"><p>Future simple</p></a>
+            <a href="{% url 'gramar_lorem' %}"><p>Future perfect</p></a>
+            <a href="{% url 'gramar_lorem' %}"><p>Future perfect continuous</p></a>
+        </div>
+        <div class="future_in_the_past_tenses">
+            <h2>Future in the past tenses</h2>
+            <a href="{% url 'gramar_lorem' %}"><p>Future continuous in the past</p></a>
+            <a href="{% url 'gramar_lorem' %}"><p>Future in the past</p></a>
+            <a href="{% url 'gramar_lorem' %}"><p>Future perfect in the past</p></a>
+            <a href="{% url 'gramar_lorem' %}"><p>Future perfect continuous in the past</p></a>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

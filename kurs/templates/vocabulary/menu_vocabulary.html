@@ -1,0 +1,83 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/style_words.css' %}">
+    {% block head_2 %}
+    {% endblock %}
+{% endblock %}
+{% block content %}
+<div class="content">
+    {% block body %}
+    {% endblock %}
+    <div class="component_left">
+        <div class="human">
+            <h2>Human</h2>
+            <a href="{% url 'body_parts' %}"><p>Body parts</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Personal information</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Clothes and accessories</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>appearance</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Personality</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Feelings</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Other expressions</p></a>
+        </div>
+        <div class="home">
+            <h2>Home</h2>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Rooms</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Types of houses</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Furniture</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Conditions</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Renting</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Localisation</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Houseworks</p></a>
+        </div>
+        <div class="school">
+            <h2>School</h2>
+            <a href="{% url 'vocabulary_lorem' %}"><p>System of education</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>School subject</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>People in the school</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Objects used at school</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Places and rooms</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Learning at school</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Exams</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>School graduation</p></a>
+        </div>
+        <div class="job">
+            <h2>Job</h2>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Competitions</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Adjectives describing work</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Job search</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Job and money</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Workers</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>In a job</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Holiday and vacation</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Unemployment</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Odd job</p></a>
+        </div>
+        <div class="family_and_friends">
+            <h2>Family and friends</h2>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Family members</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Holidays and celebrations</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Stages in human life</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Marriage and children</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Everyday activities</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Leisure activities</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Relationships</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Lifestyle</p></a>
+        </div>
+        <div class="food">
+            <h2>Food</h2>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Food</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Packaging</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Adjectives describing nutrition</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Preparing meals</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Diets</p></a>
+            <a href="{% url 'vocabulary_lorem' %}"><p>Dining options</p></a>
+        </div>
+        <div class="idioms">
+            <h2>Idioms</h2>
+            <a href="{% url 'idiomy'%}"><p>Idioms</p></a>
+            <a href="{% url 'idiomy_przyklady' %}"><p>Przykłady idiomów</p></a>
+        </div>
+    </div>
+</div>
+{% endblock %}

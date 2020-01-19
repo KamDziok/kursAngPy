@@ -1,0 +1,79 @@
+.the_country{
+    display: block;
+}
+
+/*
+    wielkowść ekrenu
+*/
+
+@media (max-width: 991px) {
+    .the_people{
+        display: none;
+    }
+    .politics_and_government{
+        display: none;
+    }
+    .international_relations{
+        display: none;
+    }
+    .the_legal_system{
+        display: none;
+    }
+    .family_and_friends{
+        display: none;
+    }
+    .the_economy{
+        display: none;
+    }
+    .social_services{
+        display: none;
+    }
+    .education{
+        display: none;
+    }
+    .the_media{
+        display: none;
+    }
+    .religion{
+        display: none;
+    }
+    .leisure_sports_and_the_arts{
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .the_people{
+        display: block;
+    }
+    .politics_and_government{
+        display: block;
+    }
+    .international_relations{
+        display: block;
+    }
+    .the_legal_system{
+        display: block;
+    }
+    .family_and_friends{
+        display: block;
+    }
+    .the_economy{
+        display: block;
+    }
+    .social_services{
+        display: block;
+    }
+    .education{
+        display: block;
+    }
+    .the_media{
+        display: block;
+    }
+    .religion{
+        display: block;
+    }
+    .leisure_sports_and_the_arts{
+        display: block;
+    }
+}

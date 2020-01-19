@@ -1,0 +1,81 @@
+.menu_horizontal div ul{
+    z-index: 1;
+}
+
+.ham_button_def{
+    height: 52px;
+    background-image: url(../img/Hamburger_icon_mob.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ham_button_active{
+    display: block;
+}
+
+.ham_button_disactive{
+    display: none;
+}
+
+/*
+    wielkowść ekrenu
+*/
+
+@media (max-width: 991px) {
+    .menu_horizontal_mob{
+        display: none!important;
+    }
+    .ham_button{
+        display: block;
+    }
+    .main_img_mob_first_img{
+        position: relative;
+        top: 310px;
+    }
+    .main_text_mob_first_img{
+        position: relative;
+        top: -340px;
+    }
+
+    /*
+        podstrony
+    */
+    
+    .component_left{
+        width: 100%!important;
+    }
+    .component_right{
+        width: 100%!important;
+    }
+}
+
+@media (min-width: 992px) {
+    .menu_horizontal_mob{
+        display: block;
+    }
+    .ham_button{
+	    display: none;
+    }
+}
+
+/*
+    rodzaj urządzenia
+    screen = przeglądarka na komputerz
+    handheld = telefon
+*/
+/*
+@media handheld {
+    .menu_horizontal div{
+        display: none!important;
+    }
+    .ham_button{
+        display: block;
+    }
+}
+
+@media screen {
+    .ham_button{
+	    display: none;
+    }
+}
+*/

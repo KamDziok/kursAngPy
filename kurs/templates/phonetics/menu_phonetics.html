@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/styleMobBe.css' %}"/>
+{% endblock %}
+{% block content %}
+<div class="content">
+    {% block body %}
+    {% endblock %}
+    <div class="component_left">
+        <div class="monophtongs">
+            <h2>Monophtongs</h2>
+            <a href="{% url 'bee' %}"><p>/ i: /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ ɪ /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ e /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ æ /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ ɑ: /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ ʌ /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ o /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ ɔ: /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ ʊ /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ u: /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ ʒ: /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ ə /</p></a>
+        </div>
+        <div class="diphtongs_and_triphtongs">
+            <h2>Diphtongs and Triphtongs</h2>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ eɪ /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ aɪ /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ ɔɪ /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ aʊ /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ əʊ /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ ɪə /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ eə /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ ʊə /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ aɪə /,/ eɪə /,/ aʊə /</p></a>
+        </div>
+        <div class="plosives">
+            <h2>Plosives</h2>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ p /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ t /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ k /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ b /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ d /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ g /</p></a>
+        </div>
+        <div class="fricatives">
+            <h2>Fricatives</h2>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ θ /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ ð /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ s /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ z /</p></a>
+        </div>
+        <div class="liquids_and_veral_nasal">
+            <h2>Liquids and veral nasal</h2>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ l /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ r /</p></a>
+            <a href="{% url 'phonetics_lorem' %}"><p>/ ŋ /</p></a>
+        </div>
+    </div>
+</div>
+{% endblock %}

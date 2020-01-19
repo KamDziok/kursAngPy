@@ -1,0 +1,130 @@
+.content{
+    background-image: url("../img/ksiazki1.png");
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.form{
+    margin: 100px auto;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+h2{
+    text-align: center;
+    margin: 0px!important;
+    padding: 16px 0px;
+}
+
+form{
+    padding: 44px 0px;
+}
+
+form input{
+    margin: 10px 20%!important;
+    width: 60%;
+    border: 1px solid #0082ff;
+}
+
+p{
+    margin: 0px!important;
+	text-align: center;
+	word-spacing:3px;
+	line-height: 28px;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+p > a:hover{
+    text-decoration: underline!important;
+}
+
+.inputCheckBox{
+    margin: 0px 15px!important;
+}
+
+label{
+    width: 60%;
+}
+
+.submit{
+    padding: 10px 0px;
+    margin: 0px;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid #0082ff;
+}
+
+.submitHover{
+    background-color: #0082ff!important;
+	color: white!important;
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+.submitStart{
+    background-color: rgb(235, 235, 228)!important;
+}
+
+.button2 {
+	background-color: white;
+    color: #0082ff;
+    cursor: pointer;
+}
+
+.reCaptcha{
+    margin: 10px 20%!important;
+    width: 60%;
+}
+
+.error{
+    color: red;
+}
+
+.pesel{
+    display: none;
+}
+.peselError{
+    display: block;
+}
+
+.email{
+    display: none;
+}
+.emailError{
+    display: block;
+}
+
+.login{
+    display: none;
+}
+.loginError{
+    display: block;
+}
+
+.password{
+    display: none;
+}
+.passwordError{
+    display: block;
+}
+
+.rep_password{
+    display: none;
+}
+.rep_passwordError{
+    display: block;
+}
+
+.kod1{
+    display: none;
+}
+.kod1Error{
+    display: block;
+}
+
+.error{
+    color: red;
+}

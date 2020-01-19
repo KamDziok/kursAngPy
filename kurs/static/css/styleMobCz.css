@@ -1,0 +1,49 @@
+.human{
+    display: block;
+}
+
+/*
+    wielkowść ekrenu
+*/
+
+@media (max-width: 991px) {
+    .home{
+        display: none;
+    }
+    .school{
+        display: none;
+    }
+    .job{
+        display: none;
+    }
+    .family_and_friends{
+        display: none;
+    }
+    .food{
+        display: none;
+    }
+    .idioms{
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .home{
+        display: block;
+    }
+    .school{
+        display: block;
+    }
+    .job{
+        display: block;
+    }
+    .family_and_friends{
+        display: block;
+    }
+    .food{
+        display: block;
+    }
+    .idioms{
+        display: block;
+    }
+}
