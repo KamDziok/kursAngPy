@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style_user.css' %}">
+    <script src="{% static 'js/jq_user.js' %}"></script>
 {% block head %}
 {% endblock %}
 {% block content %}
@@ -7,19 +9,13 @@
     <div class="component_right">
         <h1>Dostępne testy</h1>
         <div class="box">
-            {% for Test in Testy %}
+            {% for test in Testy %}
                 <div>
                     <form method="POST">
-                        <h2>{{ Test.test }}<input type="submit" class="button" name="" value="Do testu"/></h2>
+                        <h2>{{ test.test }}<input type="submit" class="button" name="" value="Do testu"/></h2>
                     </form>
                 </div>
             {% endfor %}
-            <div>
-                <form method="POST">
-                    <h2><?php echo $wiersz['nazwa_testu']; ?><input type="submit" class="button" name="<?php echo $wiersz['nazwa_testu']; ?>" value="Do testu"/></h2>
-                </form>
-            </div>
-
         </div>
     </div>
 </div>
