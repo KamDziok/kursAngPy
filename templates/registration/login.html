@@ -7,16 +7,18 @@
 <div class="content contentLogIn">
     <div class="form offset-xl-4 offset-lg-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
         <div class="">
-            <form action="" method="POST">
-                <h2>Logowanie do ENG</h2>
-                <p class="error">
+            <form method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+<!--                <h2>Logowanie do ENG</h2>-->
+<!--                <p class="error">-->
 
-                </p>
-                <p>Login:</p>
-                <input type="text" name="login"/>
-                <p>Hasło:</p>
-                <input type="password" name="password"/>
-                <p>Nie posiadasz jeszcze konta? <a href="{% url 'signup' %}">Zarejestruj</a></p>
+<!--                </p>-->
+<!--                <p>Login:</p>-->
+<!--                <input type="text" name="login"/>-->
+<!--                <p>Hasło:</p>-->
+<!--                <input type="password" name="password"/>-->
+<!--                <p>Nie posiadasz jeszcze konta? <a href="{% url 'signup' %}">Zarejestruj</a></p>-->
                 <input class="button" type="submit" name="" value="Zaloguj"/>
             </form>
         </div>

@@ -30,7 +30,7 @@
         <img src="{% static 'img/logo.png' %}">
         {% if user.is_authenticated %}
         <div class="avatar">
-            <a href="">
+            <a href="{% url 'user' %}">
                 <div></div>
             </a>
             <p>{{ user.username }}</p>

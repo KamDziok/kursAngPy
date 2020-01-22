@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+{% endblock %}
+{% block content %}
+<div class="content">
+    <div class="component_right">
+        <h1>Dostępne testy</h1>
+        <div class="box">
+            {% for Test in Testy %}
+                <div>
+                    <form method="POST">
+                        <h2>{{ Test.test }}<input type="submit" class="button" name="" value="Do testu"/></h2>
+                    </form>
+                </div>
+            {% endfor %}
+            <div>
+                <form method="POST">
+                    <h2><?php echo $wiersz['nazwa_testu']; ?><input type="submit" class="button" name="<?php echo $wiersz['nazwa_testu']; ?>" value="Do testu"/></h2>
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
