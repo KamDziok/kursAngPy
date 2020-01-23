@@ -1,9 +1,8 @@
 from django.contrib import admin
-
-from accounts.models import TestyUzytkownikow, Pytania, Test
-
-admin.site.register(Test)
-admin.site.register(TestyUzytkownikow)
-admin.site.register(Pytania)
+from .models import Kategorie, Dzial, Temat
 
 # Register your models here.
+
+admin.site.register(Kategorie)
+admin.site.register(Dzial)
+admin.site.register(Temat)

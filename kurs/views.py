@@ -1,19 +1,21 @@
 from django.shortcuts import render
-from .models import Kategorie, Dzial, Temat
+from django.urls import reverse_lazy
+
+from kurs import models as m
 
 # Create your views here.
 
 
 def renderMenu(request):
-    menu = Kategorie.kategoria
-    return render(request, 'templates/base.html', {'menu': menu})
+    menu = m.Kategorie.objects.all()
+    return render(request, 'base.html', {'menu': menu})
 
 
 def renderDzial(request):
-    dzial = Dzial.dzial
-    return render(request, 'templates/base.html', {'dzial': dzial})
+    dzial = m.Dzial.objects.all()
+    return render(request, 'base.html', {'dzial': dzial})
 
 
 def renderTemat(request):
-    temat = Temat.temat
-    return render(request, 'templates/base.html', {'temat': temat})
+    temat = m.Temat.objects.all()
+    return render(request, 'base.html', {'temat': temat})

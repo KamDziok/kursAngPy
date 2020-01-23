@@ -14,3 +14,5 @@ class SignUp(generic.CreateView):
 class TestListView(ListView):
     model = Test
     context_object_name = 'Testy'
+    success_url = reverse_lazy('user')
+    template_name = 'user.html'
