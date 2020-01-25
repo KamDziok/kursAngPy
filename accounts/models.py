@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import User
 # Create your models here.
 
+
 class Test(models.Model):
     # artist = models.ForeignKey(Musician, on_delete=models.CASCADE)
     test = models.CharField('Nazwa testu', max_length=50)
@@ -13,6 +14,7 @@ class Test(models.Model):
 
         def __unicode__(self):
             return self.name
+
 
 class Pytania(models.Model):
     test = models.ForeignKey(Test, on_delete=models.CASCADE)
@@ -29,6 +31,7 @@ class Pytania(models.Model):
 
         def __unicode__(self):
             return self.name
+
 
 class TestyUzytkownikow(models.Model):
     test = models.ForeignKey(Test, on_delete=models.CASCADE)
