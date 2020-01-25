@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/style_user.css' %}">
+    <script src="{% static 'js/jq_user.js' %}"></script>
+{% endblock %}
+{% block content %}
+<div class="content">
+    <div class="component_right">
+        <h1>Dostępne testy</h1>
+        <div class="box">
+            {% for testFor in testy %}
+                <div>
+                    <form action="{% url 'test' testFor.id %}" method="POST">
+                        <h2>{{ forloop.counter }}. {{ testFor.test }}<input type="submit" class="button" name="" value="Do testu"/></h2>
+                    </form>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}
