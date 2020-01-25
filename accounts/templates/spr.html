@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/style_test.css' %}"/>
+{% endblock %}
+{% block content %}
+<div class="content content_test content_spr">
+    <h1><?php echo "Test z działu ".$fid; ?></h1>
+    <div class="form offset-xl-2 offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
+        <div class="">
+            <form>
+                <div>
+                    {% if rezultat %}
+                        <h3 class='good'> Zaliczyłeś.</h3>
+                    {% else %}
+                        <h3 class='bad'> Nie zaliczyłeś.</h3>
+                    {% endif %}
+                    <p>
+                        Twój wynik to: {{ wynik }}%
+                    </p>
+                    <a href="{% url 'user' %}" class="button">Powrót</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

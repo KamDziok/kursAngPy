@@ -7,25 +7,25 @@
 <div class="content content_test">
     <div class="form offset-xl-2 offset-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
         <div class="">
-            <form action="" method="POST">
+            <form action="{% url 'result' %}" method="POST">
                 {% for pyt in pytania %}
                     <div>
                         <h3>{{ forloop.counter }}. {{ pyt.pytanie }}</h3>
                         <ul>
                             <li>
-                                <input type='radio' name='answer{{ pyt.pytanie }}'  value='0' />
+                                <input type='radio' name='answer_{{ pyt.id }}'  value='0' />
                                 {{ pyt.odp_pierwsza }}
                             </li>
                             <li>
-                                <input type='radio' name='answer{{ pyt.pytanie }}'  value='1' />
+                                <input type='radio' name='answer_{{ pyt.id }}'  value='1' />
                                 {{ pyt.odp_druga }}
                             </li>
                             <li>
-                                <input type='radio' name='answer{{ pyt.pytanie }}'  value='2' />
+                                <input type='radio' name='answer_{{ pyt.id }}'  value='2' />
                                 {{ pyt.odp_trzecia }}
                             </li>
                             <li>
-                                <input type='radio' name='answer{{ pyt.pytanie }}'  value='3' checked/>
+                                <input type='radio' name='answer_{{ pyt.id }}'  value='3' checked/>
                                 {{ pyt.odp_czwarta }}
                             </li>
                         </ul>

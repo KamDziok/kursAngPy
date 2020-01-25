@@ -9,6 +9,7 @@ urlpatterns = [
     path('user', views.TestListView.as_view(), name='user'),
     # path('test/<slug:testch>/', views.PytaniaTest, name="test"),
     path('test/(?P<testch>[-a-zA-Z0-9_]+)\\', views.PytaniaTest, name="test"),
+    path('result', views.Result, name='result'),
     # path('user', views.TestListView, name='user'),
     # path('admin/', admin.site.urls),
     # path('test', views.SignUp.as_view(), name='signup'),
